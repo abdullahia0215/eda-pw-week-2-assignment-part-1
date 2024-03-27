@@ -22,17 +22,24 @@ let introduction = 'My name is ' + fullName + ' and I think ' + luckyNumber + ' 
 console.log(introduction);
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
 //     Console log the value of `adventurous`
+let adventurous = true;
+console.log(adventurous)
 
 // 7 - Create a variable named `food`, and set its value to a string of your favorite food
 //     Console log the value of `food`
+let food = 'samosas';
+console.log(food)
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-
+let pets = 2;
+console.log(pets)
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-
+let friendsPets = 6;
+console.log(friendsPets);
 // 10 - Add two pets to your `pets` variable
-
+friendsPets+=2;
+console.log(friendsPets);
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 
 // 12 - Create a variable called `result`. Create a conditional:
