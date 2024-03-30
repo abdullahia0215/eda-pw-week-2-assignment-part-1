@@ -17,7 +17,7 @@ console.log(luckyNumber)
 //     'My name is (full name), and I think (lucky number) is a winner!'.
 //     Refer back to the videos if you need help with this one.
 //     Console log the value of `introduction`
-let introduction = 'My name is ' + fullName + ' and I think ' + luckyNumber + ' is a winner!'
+let introduction = 'My name is ' + (fullName) + ' and I think ' + (luckyNumber) + ' is a winner!'
 
 console.log(introduction);
 // 6 - Create a variable named `adventurous` and set it to a boolean value (true or false)
@@ -60,6 +60,12 @@ let result;
 //      if luckyNumber is 2 and adventurous is true,
 //      set `diceRoll` to be "Roll the dice!"
 //      Console log the value of `diceRoll`
+let diceRoll = "Try again later."
+
+if (luckyNumber===2 & adventurous===true) {
+  diceRoll = "Roll the dice!"
+}
+console.log(diceRoll)
 
 // 14 - Create a variable called `petStatus`. 
 //      Write a conditional that covers the following:
@@ -71,6 +77,17 @@ let result;
 //      set `petStatus` to the value of "Oh no, I have too many pets!"
 
 
+let petStatus;
+if (pets < allowedPets){
+  petStatus = "I can have more pets"
+}
+if (pets = allowedPets){
+  petStatus = "I have enough pets"
+}
+if (pets > allowedPets){
+  petStatus = "Oh no! i have too many pets!"
+}
+console.log(petStatus);
 // STRETCH GOALS:
 
 // 15 - Make a variable called `mostPets` and a conditional that
