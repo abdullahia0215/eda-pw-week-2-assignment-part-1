@@ -4,7 +4,7 @@ let firstName = 'Abdi';
 // 2 - Create a second variable called `lastName` and assign it the value of your last name
 let lastName = 'Ali';
 // 3 - Create a third variable called `fullName`, assign it the value of your first and last name
-let fullName = "Abdi Ali";
+let fullName = `${firstName} ${lastName}`
 //     (remember, you already have variables for this, can you use those?)
 //     Console log the value of `fullName`
 console.log(fullName)
@@ -32,14 +32,14 @@ console.log(food)
 
 // 8 - Create a variable called `pets` and set it to the value of the number of pets you have
 //     Console log the value of `pets`
-let pets = 2;
+let pets = 5;
 console.log(pets)
 // 9 - Create a variable called `friendsPets` and assign it the value of the number of pets your friend has
-let friendsPets = 6;
+let friendsPets = 5;
 console.log(friendsPets);
 // 10 - Add two pets to your `pets` variable
-friendsPets+=2;
-console.log(friendsPets);
+// friendsPets+=2;
+// console.log(friendsPets);
 // 11 - Create a constant variable called `allowedPets` and set it to a number value of your choice
 const allowedPets = 5;
 console.log (allowedPets);
@@ -55,6 +55,8 @@ let result;
      result = "How about we stay home?"
   }
   console.log(result)
+
+  
 // 13 - Create a variable called `diceRoll` and set it to the value of "Try again later.".
 //      Create a compound conditional: 
 //      if luckyNumber is 2 and adventurous is true,
@@ -81,7 +83,7 @@ let petStatus;
 if (pets < allowedPets){
   petStatus = "I can have more pets"
 }
-if (pets = allowedPets){
+if (pets === allowedPets){
   petStatus = "I have enough pets"
 }
 if (pets > allowedPets){
@@ -99,10 +101,14 @@ console.log(petStatus);
 let mostPets;
 
 if (pets>friendsPets){
-  mostPets=pets
-} else {
-  mostPets=friendsPets
+  mostPets="You have more pets with a count of " + pets;
+} if (friendsPets>pets){
+  mostPets="Your friend has the most pets with a count of " + friendsPets;
 }
+if (pets===friendsPets){
+  mostPets="It's a tie! Same amount of pets.";
+}
+
 console.log(mostPets);
 // 16 - Make a variable called `luckyResult`
 //      Write a *switch* statement that sets `luckyResult` to:
