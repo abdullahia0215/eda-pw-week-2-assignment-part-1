@@ -100,13 +100,13 @@ console.log(petStatus);
 let mostPets;
 
 if (pets > friendsPets) {
-  mostPets = "You have more pets with a count of " + pets;
+  mostPets = pets;
 }
 if (friendsPets > pets) {
-  mostPets = "Your friend has the most pets with a count of " + friendsPets;
+  mostPets = friendsPets;
 }
 if (pets === friendsPets) {
-  mostPets = "It's a tie! Same amount of pets.";
+  mostPets = pets;
 }
 
 console.log(mostPets);
